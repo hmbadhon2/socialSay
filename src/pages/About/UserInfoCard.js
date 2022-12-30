@@ -3,21 +3,22 @@ import React from 'react';
 
 
 const UserInfoCard = ({userInfo}) => {
-   const {id} = userInfo;
+   const {_id} = userInfo;
 
   
     const {data:users =[]} =useQuery({
+     
         queryKey:['users'],
-        queryFn:()=>fetch(`http://localhost:5000/users/${id}`)
+        queryFn:()=>fetch(`http://localhost:5000/usersInfo/${_id}`)
         .then(res => res.json())
-        .then(data =>{
-           return data;
-           
+        .then(data => {
+         
+            return data;
         })
     })
     return (
         <div>
-           
+         
           <div className="collapse bg-secondary rounded-md">
 
 <input type="checkbox" />

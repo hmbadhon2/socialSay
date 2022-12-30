@@ -28,7 +28,6 @@ const UserUpdateCard = ({setUserInfo}) => {
                     setUserInfo(res)
                     
                 })
-                .catch(err => console.log(err))
                 
 
         

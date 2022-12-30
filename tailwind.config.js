@@ -11,7 +11,7 @@ module.exports = {
     themes: [
       {
         socialtheme: {
-          primary: "#a991f7",
+          primary: "#25D366",
           secondary: "#FBFCFE",
           accent: "#FFFFFF",
           neutral: "#3d4451",

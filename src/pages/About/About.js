@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UserInfoCard from './UserInfoCard';
+import UserInfoFixedCard from './UserInfoFixedCard';
 import UserUpdateCard from './UserUpdateCard';
 
 const About = () => {
@@ -23,12 +24,20 @@ const About = () => {
                     </div>
                     <div>
                     {
-                        userInfo &&
-                         <UserInfoCard
-                         userInfo ={userInfo}
-                         ></UserInfoCard>
-                    }
+
+                    
+                        userInfo?<>
+                            <UserInfoCard
+                            userInfo ={userInfo}
+                            ></UserInfoCard>
+                        </>
+                       :<>
+                       <UserInfoFixedCard></UserInfoFixedCard>
+                       </>
+                      }     
                     </div>
+                    
+                  
                     
                     
                 

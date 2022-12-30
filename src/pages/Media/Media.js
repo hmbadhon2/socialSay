@@ -1,9 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useState } from 'react';
 import { HiChatBubbleLeftRight,HiHandThumbUp,HiOutlineArrowTopRightOnSquare } from "react-icons/hi2";
 
 
 const Media = () => {
+  const [like,setLike] = useState(null)
+  const [comment,setComment] = useState(null);
     const {data:posts=[],refetch} = useQuery({
         queryKey:['posts'],
         queryFn:()=> fetch('https://social-say-server.vercel.app/post')
@@ -35,11 +37,11 @@ const Media = () => {
                   <div className='divider'></div>
                   <div className="card-actions flex gap-5 justify-around">
                   <div>
-                <label  className="btn btn-ghost gap-2"><HiHandThumbUp/>Like</label>
+                <label onClick={()=>setLike(like+1)} className="btn btn-ghost gap-2"><HiHandThumbUp/>Like {like}</label>
                 </div>
 
                   <div>
-                <label  className="btn btn-ghost gap-2"><HiChatBubbleLeftRight/>  Comment</label>
+                <label  onClick={()=>setComment()} className="btn btn-ghost gap-2"><HiChatBubbleLeftRight/>  Comment</label>
                 </div>
 
                   <div>

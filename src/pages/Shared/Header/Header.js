@@ -11,7 +11,7 @@ const Header = () => {
     </>
 
     
-    return (<div className="navbar shadow-sm bg-accent">
+    return (<div className="navbar shadow-sm bg-primary">
     <div className="navbar-start">
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,12 +25,8 @@ const Header = () => {
       </div>
       <Link className="btn btn-ghost normal-case text-xl"> Social Say</Link>
     </div>
-    <div className="navbar-center hidden lg:flex">
-      <ul className="menu menu-horizontal px-1">
-        {
-            navItem
-        }
-      </ul>
+    <div className="navbar-center hidden  lg:flex">
+    <input type="text" placeholder="Search…" className="input input-bordered max-w-screen-md rounded-full" />
     </div>
     <div className="navbar-end">
 
