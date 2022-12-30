@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from '../../../Layout/Main'
+import About from "../../About/About";
 import AddPost from "../../Home/Home/AddPost/AddPost";
 import Home  from '../../Home/Home/Home'
 import Login from "../../Login/Login/Login";
@@ -24,12 +25,12 @@ export const router = createBrowserRouter([
                 element:<Media></Media>
             },
             {
-                path:'/Message',
+                path:'/message',
                 element:<Home></Home>
             },
             {
-                path:'/About',
-                element:<Home></Home>
+                path:'/about',
+                element:<About></About>
             },
             {
                 path:'/addPost',

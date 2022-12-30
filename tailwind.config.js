@@ -13,9 +13,9 @@ module.exports = {
         socialtheme: {
           primary: "#a991f7",
           secondary: "#FBFCFE",
-          accent: "#37cdbe",
+          accent: "#FFFFFF",
           neutral: "#3d4451",
-          "base-100": "#ffffff",
+          "base-100": "#E1DEED",
         },
       },
       "dark",

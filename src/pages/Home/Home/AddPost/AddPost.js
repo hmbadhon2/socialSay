@@ -21,7 +21,7 @@ const AddPost = () => {
                 image:photoData.data.url
             }
              console.log(post)
-            fetch('http://localhost:5000/post',{
+            fetch('https://social-say-server.vercel.app/post',{
                 method:"POST",
                 headers:{
                     'content-type':'application/json'

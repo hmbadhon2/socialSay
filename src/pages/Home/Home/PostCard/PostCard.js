@@ -4,7 +4,7 @@ import { HiVideoCamera } from "react-icons/hi2";
 
 const PostCard = () => {
     return (
-        <div className="card my-10 bg-base-100 mx-auto max-w-screen-md	 shadow-xl">
+        <div className="card my-10 bg-accent mx-auto max-w-screen-md	 shadow-xl">
         <div className="card-body">
         <div className='flex gap-5'>
 

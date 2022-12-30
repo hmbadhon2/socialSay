@@ -4,12 +4,13 @@ import { HiChatBubbleLeftRight,HiHandThumbUp,HiOutlineArrowTopRightOnSquare } fr
 
 
 const Media = () => {
-    const {data:posts=[]} = useQuery({
+    const {data:posts=[],refetch} = useQuery({
         queryKey:['posts'],
-        queryFn:()=> fetch('http://localhost:5000/post')
+        queryFn:()=> fetch('https://social-say-server.vercel.app/post')
         .then(res => res.json())
         .then(data =>{
             console.log(data)
+            
             return data;
         })
 
